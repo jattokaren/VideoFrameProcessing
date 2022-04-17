@@ -1,4 +1,4 @@
-<img src="/PXL_20220402_222514868.MP-oilpainting_02_25.jpg" width="400" height="300">
+<img src="/Image Examples/PXL_20220414_015637240_2-ANIMATION.gif" width="400" height="300">
 
 # Practice doing image/video processing
 * How to open/load an image and do some munipulation and output something (ie file, image(s), video).
@@ -19,9 +19,7 @@ cv2.xphoto.oilPainting(frame, 10, 1)
   
 ![Python oilPainting](/PXL_20220402_222514868.MP-oilpainting_02_25.jpg?raw=true "Python Photo to Image Oil Painting Effect")
   <br>
-Resizing Image to 400x300
-  <br>
-<img src="/PXL_20220402_222514868.MP-oilpainting_02_25.jpg" width="400" height="300">
+
 
   ## Next Steps
 * Counting Pixel / Colors
