@@ -35,6 +35,16 @@ cv2.xphoto.oilPainting(frame, 10, 1)
 | # of Pixels | 100k |    $1 |	
 	
 	
+| Image File | Python Code | Rendered Image | Image Size |
+|-----:|-----:|-----:|-----:|
+|PXL_20220402_222514868.MP.jpg|||6.4 MB|
+|PXL_20220402_222514868.MP-oilpainting_01_50.jpg|||2.0 MB|
+|PXL_20220402_222514868.MP-oilpainting_02_25.jpg|||2.8 MB|
+||
+||
+	
+	
+	
 
 	
 | Tables   |      Are      |  Cool |
