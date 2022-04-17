@@ -5,4 +5,4 @@ How to open/load an image and do some munipulation and output something (file, i
 ![Employee data](/repository/assets/employee.png?raw=true "Employee Data title")
 <div>
   
-![Employee data](/repository/assets/employee.png?raw=true "Employee Data title")
+![Employee data](/Image Examples/PXL_20220417_171852181-oilpainting_03_10.jpg?raw=true "Employee Data title")
