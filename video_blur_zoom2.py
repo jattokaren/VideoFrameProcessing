@@ -1,4 +1,5 @@
 # python video_blur_zoom2.py --video 'HHC Backus PHI 1080p.mp4'
+# python video_blur_zoom2.py --video 'VID_20200419_194132_2.mp4'
 import cv2
 import numpy as np
 import argparse
@@ -7,7 +8,7 @@ from PIL import Image
 
 ap = argparse.ArgumentParser()
 ap.add_argument("-v", "--video", required=True,
-    help="path to input image")     # Can have multiple arguments
+    help="path to input image")     # Can have multiple arguments ie filter effect, setting
 args = vars(ap.parse_args())
 
 fullfilename = args["video"]
@@ -31,7 +32,7 @@ frame_height = int(cap.get(4))
 print(str(frame_width) + ' x ' + str(frame_height))
 
 # define codec and create VideoWriter object
-out = cv2.VideoWriter(str(filename + '_oilpainting50.avi'), 
+out = cv2.VideoWriter(str(filename + '_GaussianBlur21.avi'), 
     cv2.VideoWriter_fourcc('M','J','P','G'), 30, (frame_width, frame_height))
 
 # read until end of video
@@ -41,8 +42,8 @@ while(cap.isOpened()):
     if ret == True:
         # add gaussian blurring to frame + medianBlur
         #frame = cv2.medianBlur(frame, 9)            #(frame, 7)
-        #frame = cv2.GaussianBlur(frame, (7,7), 0)   #(3,3) or (5,5)
-        frame = cv2.xphoto.oilPainting(frame, 50, 1) #(frame, 25, 1) or (frame, 10, 1)
+        frame = cv2.GaussianBlur(frame, (21,21), 0)   #(3,3) or (5,5) or (7,7) or (101,101)
+        #frame = cv2.xphoto.oilPainting(frame, 10, 1) #(frame, 25, 1) or (frame, 10, 1)
         # save video frame
         out.write(frame)
         # display frame
