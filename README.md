@@ -37,14 +37,15 @@ cv2.xphoto.oilPainting(frame, 10, 1)
 	
 | Image File | Python Code | Rendered Image | Image Size |
 |-----:|-----:|-----:|-----:|
-|PXL_20220402_222514868.MP.jpg|||6.4 MB|
-|PXL_20220402_222514868.MP-oilpainting_01_50.jpg|||2.0 MB|
-|PXL_20220402_222514868.MP-oilpainting_02_25.jpg|||2.8 MB|
+|PXL_20220402_222514868.MP.jpg|image = cv2.imread(args["image"])|<img src="/Image Examples/PXL_20220402_222514868.MP.jpg" width="240" height="180">   |6.4 MB|
+|PXL_20220402_222514868.MP-oilpainting_01_50.jpg|oilpaint50 = cv2.xphoto.oilPainting(image, 50, 1)|<img src="/Image Examples/PXL_20220402_222514868.MP-oilpainting_01_50.jpg" width="240" height="180">   |2.0 MB|
+|PXL_20220402_222514868.MP-oilpainting_02_25.jpg|oilpaint25 = cv2.xphoto.oilPainting(image, 25, 1)|<img src="/Image Examples/PXL_20220402_222514868.MP-oilpainting_02_25.jpg" width="240" height="180"> |2.8 MB|
+|PXL_20220402_222514868.MP-oilpainting_03_10.jpg|oilpaint10 = cv2.xphoto.oilPainting(image, 10, 1)|<img src="/Image Examples/PXL_20220402_222514868.MP-oilpainting_03_10.jpg" width="300" height="200"> |4.2 MB|
 ||
-||
 	
 	
-	
+	/Image Examples/PXL_20220402_222514868.MP.jpg
+	/Image Examples/PXL_20220402_222514868.MP-oilpainting_01_50.jpg
 
 	
 | Tables   |      Are      |  Cool |
