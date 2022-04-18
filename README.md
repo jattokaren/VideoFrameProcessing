@@ -1,9 +1,18 @@
+# Imaging Processing with Python 
+a .gif cycling thru some image manipulation examples
+
 <img src="/Image Examples/PXL_20220414_015637240_2-ANIMATION.gif" width="400" height="300">
 
 # Practice doing image/video processing
-* How to open/load an image and do some munipulation and output something (ie file, image(s), video).
+* How to open/load an image and do some munipulation and output something (ie file(s), image(s) and/or video(s)).
 
-## Python Image Filters / Effects
+  ## Python Examples
+* [Example Functions](#example-functions)
+* [Image Filters / Manipulation](#project-1)
+* [Video Processing ](#project-2)
+* [Next Steps](#next-steps)
+
+## Example Functions
 * oilPainting
 <br>
 <img src="/PXL_20220402_222514868.MP-oilpainting_02_25.jpg" width="400" height="300">
@@ -20,65 +29,58 @@ cv2.xphoto.oilPainting(frame, 10, 1)
 ![Python oilPainting](/PXL_20220402_222514868.MP-oilpainting_02_25.jpg?raw=true "Python Photo to Image Oil Painting Effect")
   <br>
 
+## Project 1
+* Input: an image file
+	* PXL_20220402_222514868.MP.jpg
+	* python imageFilterOptions.py --image PXL_20220414_015637240_2.jpg
+* Output: 6 image files
+	* oilpainting 50
+	* oilpainting 25
+	* oilpainting 10
+	* RGB Gray Scale
+	* RGB Heatmap
+	* BGR Gray Scale
+	* BRG Heatmap
 
-  ## Next Steps
-* Counting Pixel / Colors
-* Count Yellow Circles
-* Animate Objects (Spin & Move)
+	PXL_20220402_222514868.MP-oilpainting_01_50.jpg
+	PXL_20220402_222514868.MP-oilpainting_02_25.jpg
+	PXL_20220402_222514868.MP-oilpainting_03_10.jpg
+	PXL_20220402_222514868.MP-RGB-GRAY.jpg
+	PXL_20220402_222514868.MP-RGB-Heatmap.jpg
+	PXL_20220402_222514868.MP-BGR-GRAY.jpg
+	PXL_20220402_222514868.MP-BRG-Heatmap.jpg	
 
-| Image File Attributes   |      1st Image     |  2nd Image | 3rd Image |
-|----------|:-------------:|------:|----:|
-| Filename |  PXL_20220414_015637240_2.jpg| -oilpainting_01_50.jpg | 
-| Python Code |  image = cv2.imread(args["image"])| oilpaint50 = cv2.xphoto.oilPainting(image, 50, 1) |
-| Rendered Image |    <img src="/PXL_20220402_222514868.MP-oilpainting_02_25.jpg" width="240" height="180">   |   $12 |
-| Image Size | 2.9 MB |    2.0 MB |	
-| # of Pixels | 100k |    $1 |	
-	
-	
-| Image File | Python Code | Rendered Image | Image Size |
+| Image Filename | Python Code | Rendered Image | Image Size |
 |-----:|-----:|-----:|-----:|
 |PXL_20220402_222514868.MP.jpg|image = cv2.imread(args["image"])|<img src="/Image Examples/PXL_20220402_222514868.MP.jpg" width="240" height="180">   |6.4 MB|
 |PXL_20220402_222514868.MP-oilpainting_01_50.jpg|oilpaint50 = cv2.xphoto.oilPainting(image, 50, 1)|<img src="/Image Examples/PXL_20220402_222514868.MP-oilpainting_01_50.jpg" width="240" height="180">   |2.0 MB|
 |PXL_20220402_222514868.MP-oilpainting_02_25.jpg|oilpaint25 = cv2.xphoto.oilPainting(image, 25, 1)|<img src="/Image Examples/PXL_20220402_222514868.MP-oilpainting_02_25.jpg" width="240" height="180"> |2.8 MB|
 |PXL_20220402_222514868.MP-oilpainting_03_10.jpg|oilpaint10 = cv2.xphoto.oilPainting(image, 10, 1)|<img src="/Image Examples/PXL_20220402_222514868.MP-oilpainting_03_10.jpg" width="300" height="200"> |4.2 MB|
-||
+|PXL_20220402_222514868.MP-RGB-GRAY.jpg|img_RGB_Gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)|<img src="/Image Examples/PXL_20220402_222514868.MP-RGB-GRAY.jpg" width="300" height="200"> |3.1 MB|
+|PXL_20220402_222514868.MP-RGB-Heatmap.jpg|img_RGB_Heatmap = cv2.applyColorMap(img_RGB_Gray, cv2.COLORMAP_JET)|<img src="/Image Examples/PXL_20220402_222514868.MP-RGB-Heatmap.jpg" width="300" height="200"> |6.6 MB|
+|PXL_20220402_222514868.MP-BGR-GRAY.jpg|img_BGR = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)|<img src="/Image Examples/PXL_20220402_222514868.MP-BGR-GRAY.jpg" width="300" height="200"> |3.1 MB|
+|PXL_20220402_222514868.MP-BRG-Heatmap.jpg|img_BGR_Heatmap = cv2.applyColorMap(img_BGR_Gray, cv2.COLORMAP_JET)|<img src="/Image Examples/PXL_20220402_222514868.MP-BRG-Heatmap.jpg" width="300" height="200"> |6.7 MB|	
+	
+## Project 2
+* Input: a video file
+* Output: a video file
+
+## Next Steps
+* Counting Pixel / Colors
+* Count Yellow Circles
+* Animate Objects (Spin & Move)
+
+
 	
 	
 	/Image Examples/PXL_20220402_222514868.MP.jpg
 	/Image Examples/PXL_20220402_222514868.MP-oilpainting_01_50.jpg
+	/Image Examples/PXL_20220402_222514868.MP-oilpainting_02_25.jpg
+	/Image Examples/PXL_20220402_222514868.MP-oilpainting_03_10.jpg
+	/Image Examples/PXL_20220402_222514868.MP-RGB-GRAY.jpg
+	/Image Examples/PXL_20220402_222514868.MP-RGB-Heatmap.jpg
+	/Image Examples/PXL_20220402_222514868.MP-BGR-GRAY.jpg
+	/Image Examples/PXL_20220402_222514868.MP-BRG-Heatmap.jpg
 
 	
-| Tables   |      Are      |  Cool |
-|----------|:-------------:|------:|
-| col 1 is |  left-aligned | $1600 |
-| col 2 is |    centered   |   $12 |
-| col 3 is | right-aligned |    $1 |
-	
-	
-Solarized dark             |  Solarized Ocean
-:-------------------------:|:-------------------------:
-![](https://...Dark.png)  |  ![](https://...Ocean.png)
-	
-	
-  ## Table of contents
-* [General info](#general-info)
-* [Technologies](#technologies)
-* [Setup](#setup)
 
-## General info
-This project is simple Lorem ipsum dolor generator.
-	
-## Technologies
-Project is created with:
-* Lorem version: 12.3
-* Ipsum version: 2.33
-* Ament library version: 999
-	
-## Setup
-To run this project, install it locally using npm:
-
-```
-$ cd ../lorem
-$ npm install
-$ npm start
-```
