@@ -30,10 +30,10 @@ cv2.xphoto.oilPainting(frame, 10, 1)
   <br>
 
 ## Project 1
-* Input: an image file
+* **Input:** an image file
 	* PXL_20220402_222514868.MP.jpg
 	* python imageFilterOptions.py --image PXL_20220414_015637240_2.jpg
-* Output: 6 image files
+* **Output:** 6 image files
 	* oilpainting 50
 	* oilpainting 25
 	* oilpainting 10
@@ -62,8 +62,11 @@ cv2.xphoto.oilPainting(frame, 10, 1)
 |PXL_20220402_222514868.MP-BRG-Heatmap.jpg|img_BGR_Heatmap = cv2.applyColorMap(img_BGR_Gray, cv2.COLORMAP_JET)|<img src="/Image Examples/PXL_20220402_222514868.MP-BRG-Heatmap.jpg" width="300" height="200"> |6.7 MB|	
 	
 ## Project 2
-* Input: a video file
-* Output: a video file
+* **Input:** a video file
+	* python video_blur_zoom2.py --video 'HHC Backus PHI 1080p.mp4'
+	* python video_blur_zoom2.py --video 'VID_20200419_194132_2.mp4'
+* **Output:** a video file with some image processing
+	* 2022-03-14 HP PHI Clip_GaussianBlur101.avi
 
 ## Next Steps
 * Counting Pixel / Colors
